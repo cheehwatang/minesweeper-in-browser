@@ -1,0 +1,94 @@
+/* CSS classes you can use on your table td to display the relevant tile */
+td.unopened {
+  background: url('img/unopened.svg');
+  cursor: pointer;
+}
+td.opened {
+  background: url('img/opened.svg');
+}
+td.flagged {
+  background: url('img/flag.svg');
+}
+td.wrong-flagged {
+  background: url('img/red_x.svg'), url('img/flag.svg');
+}
+td.question {
+  background: url('img/question.svg');
+}
+td.mine {
+  background: url('img/mine.png'), url('img/opened.svg');
+}
+td.mine-neighbour-1 {
+  background: url('img/1.svg');
+}
+td.mine-neighbour-2 {
+  background: url('img/2.svg');
+}
+td.mine-neighbour-3 {
+  background: url('img/3.svg');
+}
+td.mine-neighbour-4 {
+  background: url('img/4.svg');
+}
+td.mine-neighbour-5 {
+  background: url('img/5.svg');
+}
+td.mine-neighbour-6 {
+  background: url('img/6.svg');
+}
+td.mine-neighbour-7 {
+  background: url('img/7.svg');
+}
+td.mine-neighbour-8 {
+  background: url('img/8.svg');
+}
+
+/* Positioning the Minesweep table and make sure the cells are square */
+table #minesweeper {
+  margin: auto;
+  margin-top: 3em;
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+table #minesweeper td {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#difficulty-buttons {
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin: 0 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#easy {
+  background-color: greenyellow;
+}
+
+#medium {
+  background-color: orange;
+}
+
+#hard {
+  background-color: red;
+  color: white;
+}
